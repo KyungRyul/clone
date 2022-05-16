@@ -186,12 +186,12 @@
         overflow: hidden;
         
     }
-    .row1 img {
-        /* position: absolute; */
+    /* .row1 img {
+        position: absolute;
         object-fit: cover;
         width: 100%;
         height: 100%;
-    }
+    } */
 
     .ro1_li1 {
         color: white;
@@ -224,6 +224,7 @@
     }
     
     #row_two {
+        margin: 10px auto;
         background-color: chocolate;
         width: 250px;
         /* margin: 10px auto; */
@@ -234,10 +235,12 @@
     }
     
     .slides_list {
+        margin: 0px;
+        padding: 0px;
         position: absolute;
         left: 0;
         top: 0;
-        width: 840px;
+        width: 250px;
         transition: left 0.5s ease-out;
     }
 

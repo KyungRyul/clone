@@ -92,10 +92,9 @@
 
                     <div id="row_two"> 
                         <ul class="slides_list"> 
-                            <li><img src="./home2.jpg" alt="" width="250px"></li> 
-                            <li><img src="./home1.jpg" alt="" width="250px"></li>
-                            <li><img src="./store-1.jpg" alt="" width="250px"></li> 
-                            <li><img src="./store-3.jpg" alt="" width="250px"></li> 
+                            <li><img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/165131438551499245.png?gif=1&w=512" alt="" width="250PX"></li> 
+                            <li><img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/165262462273963092.png?gif=1&w=512" alt="" width="250PX"></li>
+                            <li><img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/165164434042577887.png?gif=1&w=512" alt="" width="250PX"></li>
                         </ul> 
                         <p class="controller"> 
                             <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
@@ -557,23 +556,21 @@
 
 
 <script>
-    alert('aaa');
-    console.log('aaa');    
-    const slides_list = document.querySelector('.slides_list');
-    const slides_listImg = document.querySelector('.slides_list li');
+    const slides_list = document.querySelector('.slides_list');    
+    const slides_listImg = document.querySelectorAll('.slides_list li');
     let currentldx = 0;
     const slideCount = slides_listImg.length;
     console.log(slideCount);
     const prev = document.querySelector('.prev');
-    console.log(prev);
+    
     const next = document.querySelector('.next');
-    const slideWidth = 200;
-    const slideMargin = 10;
+    const slideWidth = 250;
+    const slideMargin = 0;
 
     slides_list.style.width = (slideWidth + slideMargin) * slideCount + 'px';
 
     function moveSlide(num) {
-        slides_list.style.left =-num * 260 + 'px';
+        slides_list.style.left =-num * 250 + 'px';
         currentldx = num;
     }
 
